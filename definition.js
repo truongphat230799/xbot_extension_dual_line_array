@@ -357,7 +357,7 @@ Blockly.Python["line_sensor2_read_all"] = function (block) {
   Blockly.Python.definitions_['import_line_sensor2'] = 'from xbot_line_sensor_stm import *';
   Blockly.Python.definitions_['create_line_sensor2'] = 'line_sensor2 = LineSensor2('+port+')';
   // TODO: Assemble Python into code variable.
-  var code = "line_sensor1.read("+ port+") == (" + S1 + ", " + S2 + ", " + S3 + ", " + S4 + ")";
+  var code = "line_sensor1.read_ss2("+ port+") == (" + S1 + ", " + S2 + ", " + S3 + ", " + S4 + ")";
   return [code, Blockly.Python.ORDER_NONE];
 };
 
@@ -415,6 +415,6 @@ Blockly.Python["line_sensor2_read_single"] = function (block) {
   Blockly.Python.definitions_['import_line_sensor2'] = 'from xbot_line_sensor_stm import *';
   Blockly.Python.definitions_['create_line_sensor2'] = 'line_sensor2 = LineSensor2('+port+')';
   // TODO: Assemble Python into code variable.
-  var code = "line_sensor2.read("+port+", " + pin + ")";
+  var code = "line_sensor2.read_ss2("+port+", " + pin + ")";
   return [code, Blockly.Python.ORDER_NONE];
 };

@@ -1,10 +1,10 @@
-from machine import Pin, SoftI2C
+import machine
 from micropython import const
 import pcf8574
 from setting import PORTS_DIGITAL, device_config
 from utility import say
 
-class LineSensorI2C(LineSensor):
+class LineSensorI2C():
     def __init__(self, port, address=0x23):
         self.address = address
         if port < 0 or port > 5:
@@ -37,4 +37,5 @@ class LineSensorI2C(LineSensor):
             return (self.pcf.pin(0), self.pcf.pin(1), self.pcf.pin(2), self.pcf.pin(3))
 
         return self.pcf.pin(index)
+
 

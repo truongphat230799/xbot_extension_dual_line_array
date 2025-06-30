@@ -172,10 +172,10 @@ Blockly.Blocks['line_sensor_read_single'] = {
             "type": "field_dropdown",
             "name": "pin",
             "options": [
-              ["S1", "1"],
-              ["S2", "2"],
-              ["S3", "3"],
-              ["S4", "4"],
+              ["S1", "0"],
+              ["S2", "1"],
+              ["S3", "2"],
+              ["S4", "3"],
             ],
           },
           {
@@ -381,10 +381,10 @@ Blockly.Blocks['line_sensor2_read_single'] = {
             "type": "field_dropdown",
             "name": "pin",
             "options": [
-              ["S1", "1"],
-              ["S2", "2"],
-              ["S3", "3"],
-              ["S4", "4"],
+              ["S1", "0"],
+              ["S2", "1"],
+              ["S3", "2"],
+              ["S4", "3"],
             ],
           },
           {
